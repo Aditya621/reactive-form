@@ -1,9 +1,9 @@
 .main-form {
-  margin: 20px;
+  margin: 40px;
 }
 
 .main-form > div {
-  margin-block-start: 20px;
+  margin-block-start: 30px;
 }
 
 input {

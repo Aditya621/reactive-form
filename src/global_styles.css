@@ -1,1 +1,10 @@
 /* Add application styles & imports to this file! */
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+app-login{
+    display: flex;
+    justify-content: center;
+}

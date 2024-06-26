@@ -9,7 +9,7 @@ import { LoginComponent } from './app/login/login.component';
   standalone: true,
   template: `
     <h1>Beginner Level {{ name }}!</h1>
-    <app-login>This is Child Component </app-login>
+    <app-login class="child"></app-login>
   `,
   imports: [LoginComponent],
 })
