@@ -1,0 +1,35 @@
+<ng-content></ng-content>
+<div class="main">
+  <form class="main-form" [formGroup]="login_form">
+    <div>
+      <label>Username : </label>
+      <input
+        type="text"
+        formControlName="username"
+        placeholder="Enter UserName"
+      />
+    </div>
+
+    <div>
+      <label>Password : </label>
+      <input
+        type="text"
+        formControlName="password"
+        placeholder="Enter Password"
+      />
+    </div>
+    <button [disabled]="login_form.invalid" (click)="submitLoginForm()">
+      Submit Form
+    </button>
+    <button [disabled]="login_form.invalid" (click)="resetForm()">
+      Reset Form
+    </button>
+  </form>
+
+  @if(showResponse){
+  <div>
+    <h3>Submited Username : {{ login_form.get('username')?.value }}</h3>
+    <h3>Your Password : {{ login_form.controls['password']?.value }}</h3>
+  </div>
+  }
+</div>

@@ -1,0 +1,23 @@
+.main-form {
+  margin: 20px;
+}
+
+.main-form > div {
+  margin-block-start: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: small;
+}
+
+label {
+  font-size: large;
+}
+
+.main-form > button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
